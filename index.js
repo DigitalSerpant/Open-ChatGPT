@@ -9,7 +9,7 @@ document.getElementById("prompt-form").addEventListener("submit", function(event
     var request = new XMLHttpRequest();
     request.open("POST", "https://api.openai.com/v1/engines/text-davinci-001/completions");
     request.setRequestHeader("Content-Type", "application/json");
-    request.setRequestHeader("Authorization", "Bearer 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");//<<== PLACE YOUR API KEY IN THE QUOTES
+    request.setRequestHeader("Authorization", "Bearer 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");//<<== PLACE YOUR API KEY IN THE QUOTES
     request.onreadystatechange = function() {
       if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
         // Parse the JSON response and display the generated text
