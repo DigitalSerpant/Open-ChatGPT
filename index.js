@@ -7,7 +7,7 @@ document.getElementById("prompt-form").addEventListener("submit", function(event
   
     // Call the OpenAI API to generate a response
     var request = new XMLHttpRequest();
-    request.open("POST", "https://api.openai.com/v1/engines/text-ada-001/completions");
+    request.open("POST", "https://api.openai.com/v1/engines/text-davinci-001/completions");
     request.setRequestHeader("Content-Type", "application/json");
     request.setRequestHeader("Authorization", "Bearer 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");//<<== PLACE YOUR API KEY IN THE QUOTES
     request.onreadystatechange = function() {
